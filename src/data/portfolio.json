@@ -1,0 +1,168 @@
+{
+  "identity": {
+    "name": "Kingsley",
+    "role": "Software Engineer | Full-Stack · AI · Cloud · Mobile",
+    "handle": "kingsley@portfolio:~$",
+    "location": "Remote · Global",
+    "availability": "Open to senior full-stack, AI, and cloud roles"
+  },
+  "intro": "I build fast, thoughtful products across web, AI, cloud, and mobile stacks, with an eye toward user experience and systems that scale.",
+  "about": "Kingsley is a software engineer who ships resilient product experiences across React, Next.js, Node.js, cloud platforms, and AI-powered workflows. He blends product thinking with hands-on engineering and cares about clean architecture, performance, and polished UX.",
+  "story": "He works best at the intersection of software craftsmanship, AI integration, and practical delivery. His work often spans design systems, APIs, deployment pipelines, automation, and product analytics.",
+  "links": {
+    "github": "https://github.com/kingsley",
+    "linkedin": "https://linkedin.com/in/kingsley",
+    "blog": "/blog"
+  },
+  "stats": [
+    { "label": "Years shipping", "value": "6+" },
+    { "label": "Product launches", "value": "20+" },
+    { "label": "Cloud deployments", "value": "40+" },
+    { "label": "AI features built", "value": "15+" }
+  ],
+  "services": [
+    "Full-stack product engineering",
+    "AI assistant and RAG systems",
+    "Cloud architecture and automation",
+    "Mobile app development",
+    "Design system implementation",
+    "Performance and accessibility tuning"
+  ],
+  "skills": [
+    {
+      "title": "Frontend",
+      "items": [
+        { "name": "React", "level": 98 },
+        { "name": "Next.js", "level": 96 },
+        { "name": "Tailwind CSS", "level": 95 },
+        { "name": "React Native", "level": 86 }
+      ]
+    },
+    {
+      "title": "Backend",
+      "items": [
+        { "name": "Node.js", "level": 95 },
+        { "name": "NestJS", "level": 88 },
+        { "name": "Express", "level": 90 },
+        { "name": "PostgreSQL", "level": 89 }
+      ]
+    },
+    {
+      "title": "Cloud",
+      "items": [
+        { "name": "AWS", "level": 94 },
+        { "name": "Docker", "level": 90 },
+        { "name": "Kubernetes", "level": 82 },
+        { "name": "Vercel", "level": 97 }
+      ]
+    },
+    {
+      "title": "AI / ML",
+      "items": [
+        { "name": "Python", "level": 90 },
+        { "name": "LLMs", "level": 92 },
+        { "name": "Prompt engineering", "level": 94 },
+        { "name": "TensorFlow", "level": 78 }
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "slug": "climate",
+      "name": "Climate Grid",
+      "headline": "Real-time climate analytics for field teams",
+      "summary": "An operational dashboard that combines device telemetry, forecasts, and AI summaries for fast decision-making.",
+      "tech": ["Next.js", "TypeScript", "AWS", "PostgreSQL", "OpenAI"],
+      "github": "https://github.com/kingsley/climate-grid",
+      "demo": "https://climate-grid.example.com",
+      "challenge": "The system had to render live data at low latency while staying readable on mobile field devices.",
+      "lesson": "Small, purpose-built interactions beat noisy dashboards when users need to act under pressure.",
+      "architecture": "Edge-friendly API routes, server components for data fetching, cached widgets, and a lightweight AI insight layer.",
+      "screenshots": ["Dashboard", "Mobile view", "AI summary panel"]
+    },
+    {
+      "slug": "healthcare",
+      "name": "Pulse Care",
+      "headline": "Patient experience workflow platform",
+      "summary": "A secure workflow system for appointment operations, triage notes, and staff handoffs with accessibility-first UI.",
+      "tech": ["React", "NestJS", "Docker", "Redis", "PostgreSQL"],
+      "github": "https://github.com/kingsley/pulse-care",
+      "demo": "https://pulse-care.example.com",
+      "challenge": "Balancing compliance-friendly architecture with speed for busy clinical teams.",
+      "lesson": "Operational software wins when it reduces cognitive load instead of adding more screens.",
+      "architecture": "Domain modules, audit logging, role-based permissions, and queue-backed async notification jobs.",
+      "screenshots": ["Ops console", "Patient timeline", "Staff queue"]
+    },
+    {
+      "slug": "ecommerce",
+      "name": "Orbit Commerce",
+      "headline": "Headless commerce storefront with AI merchandising",
+      "summary": "A performant storefront with personalized recommendations, content blocks, and fast checkout experiences.",
+      "tech": ["Next.js", "Tailwind", "Stripe", "Prisma", "OpenAI"],
+      "github": "https://github.com/kingsley/orbit-commerce",
+      "demo": "https://orbit-commerce.example.com",
+      "challenge": "Keeping the storefront fast while layering in personalization and analytics.",
+      "lesson": "Performance budgets should be part of the architecture, not an afterthought.",
+      "architecture": "Server-rendered product pages, incremental caching, and a recommendation service using retrieval signals.",
+      "screenshots": ["Storefront", "Product detail", "Checkout"]
+    }
+  ],
+  "experience": [
+    {
+      "company": "Independent / Consulting",
+      "title": "Senior Full-Stack Engineer",
+      "period": "2022 - Present",
+      "points": [
+        "Built AI-enhanced internal tools and customer-facing products with Next.js and Node.js.",
+        "Led cloud-native delivery pipelines and performance audits for production apps.",
+        "Designed mobile and web experiences with accessibility and maintainability in mind."
+      ]
+    },
+    {
+      "company": "Product Team",
+      "title": "Software Engineer",
+      "period": "2019 - 2022",
+      "points": [
+        "Owned feature delivery across frontend, backend, and infrastructure layers.",
+        "Implemented APIs, dashboards, and automation that reduced manual work for operations teams.",
+        "Partnered with designers and PMs to turn ambiguous ideas into shippable product slices."
+      ]
+    }
+  ],
+  "education": [
+    "BSc / Equivalent in Computer Science or related engineering discipline",
+    "Continuous learning across cloud, distributed systems, and applied AI"
+  ],
+  "certifications": [
+    "AWS-focused cloud certifications",
+    "Professional software delivery and architecture training"
+  ],
+  "articles": [
+    {
+      "slug": "ai-product-thinking",
+      "title": "Building AI Features People Actually Use",
+      "summary": "How to layer retrieval, prompt design, and UX into AI features that feel trustworthy.",
+      "date": "2026-05-12",
+      "tags": ["AI", "UX", "Product"]
+    },
+    {
+      "slug": "cloud-systems",
+      "title": "Practical Cloud Architecture for Small Teams",
+      "summary": "A systems-thinking guide to keeping cloud costs and complexity under control.",
+      "date": "2026-03-08",
+      "tags": ["Cloud", "Architecture"]
+    }
+  ],
+  "asciiLogos": [
+    "__   __  _            _            _   _            \n\\ \\ / / | | ___   ___| | _____  __| | | | ___  ___ \n \\ V /  | |/ _ \\ / __| |/ / _ \\/ _\\` | | |/ _ \\/ __|\n  | |   | | (_) | (__|   <  __/ (_| | | |  __/\\__ \\\n  |_|   |_|\\___/ \\___|_|\\_\\___|\\__,_| |_|\\___||___/",
+    "[ Kingsley Terminal Portfolio ]"
+  ],
+  "knowledgeBase": [
+    "Kingsley specializes in full-stack development, AI systems, machine learning workflows, cloud architecture, and mobile experiences.",
+    "He has strong production experience with Next.js, React, TypeScript, Node.js, AWS, Docker, PostgreSQL, and React Native.",
+    "His AI work includes retrieval-augmented assistants, prompt-driven workflows, and product features powered by LLMs.",
+    "He cares about clean architecture, performance, accessibility, observability, and polished UX.",
+    "Projects include climate analytics, healthcare workflows, and headless commerce experiences.",
+    "He is available for full-stack, AI, cloud, and mobile roles."
+  ]
+}

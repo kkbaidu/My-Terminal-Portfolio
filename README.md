@@ -1,36 +1,38 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kingsley Terminal Portfolio
+
+An AI-powered terminal portfolio built with Next.js App Router, TypeScript, Tailwind CSS, Framer Motion, React Hook Form, markdown rendering, and the Vercel AI SDK.
+
+## Features
+
+- Fake boot sequence with typing and progress bars
+- Custom terminal with history, autocomplete, shortcuts, and theme switching
+- AI assistant backed by retrieval over portfolio data
+- Project, skill, experience, blog, and resume commands
+- Contact form with API route and optional Resend delivery
+- Markdown rendering with syntax highlighting
+- SEO-friendly `/blog` and `/projects` routes
+- Dark-only futuristic UI with glassmorphism and neon accents
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies with `npm install`.
+2. Start the dev server with `npm run dev`.
+3. Open the app at `http://localhost:3000`.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Commands
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Try `help`, `projects`, `skills`, `about`, `resume`, `contact`, `blog`, `matrix`, `theme blue`, or `ask Why should I hire Kingsley?`.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Environment Variables
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Copy `.env.example` to `.env.local` and set:
 
-## Learn More
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL` if you want to override the default model
+- `RESEND_API_KEY`
+- `CONTACT_TO_EMAIL`
+- `CONTACT_FROM_EMAIL`
 
-To learn more about Next.js, take a look at the following resources:
+## Deploying
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Deploy to Vercel as a standard Next.js app. The AI route falls back to a local response if no OpenAI key is configured, so the app still works during preview.
