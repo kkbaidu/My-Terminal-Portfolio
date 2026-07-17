@@ -1,6 +1,6 @@
 {
   "identity": {
-    "name": "Kingsley",
+    "name": "Kingsley Korankye Baidu",
     "role": "Software Engineer | Full-Stack · AI · Cloud · Mobile",
     "handle": "kingsley@portfolio:~$",
     "location": "Remote · Global",
@@ -10,15 +10,15 @@
   "about": "Kingsley is a software engineer who ships resilient product experiences across React, Next.js, Node.js, cloud platforms, and AI-powered workflows. He blends product thinking with hands-on engineering and cares about clean architecture, performance, and polished UX.",
   "story": "He works best at the intersection of software craftsmanship, AI integration, and practical delivery. His work often spans design systems, APIs, deployment pipelines, automation, and product analytics.",
   "links": {
-    "github": "https://github.com/kingsley",
-    "linkedin": "https://linkedin.com/in/kingsley",
+    "github": "https://github.com/kkbaidu",
+    "linkedin": "https://www.linkedin.com/in/kingsley-korankye-baidu",
     "blog": "/blog"
   },
   "stats": [
-    { "label": "Years shipping", "value": "6+" },
-    { "label": "Product launches", "value": "20+" },
-    { "label": "Cloud deployments", "value": "40+" },
-    { "label": "AI features built", "value": "15+" }
+    { "label": "Years shipping", "value": "2.5+" },
+    { "label": "Product launches", "value": "10+" },
+    { "label": "Cloud deployments", "value": "10+" },
+    { "label": "AI features built", "value": "10+" }
   ],
   "services": [
     "Full-stack product engineering",
@@ -73,7 +73,7 @@
       "headline": "Real-time climate analytics for field teams",
       "summary": "An operational dashboard that combines device telemetry, forecasts, and AI summaries for fast decision-making.",
       "tech": ["Next.js", "TypeScript", "AWS", "PostgreSQL", "OpenAI"],
-      "github": "https://github.com/kingsley/climate-grid",
+      "github": "https://github.com/kkbaidu/climate-grid",
       "demo": "https://climate-grid.example.com",
       "challenge": "The system had to render live data at low latency while staying readable on mobile field devices.",
       "lesson": "Small, purpose-built interactions beat noisy dashboards when users need to act under pressure.",
@@ -86,7 +86,7 @@
       "headline": "Patient experience workflow platform",
       "summary": "A secure workflow system for appointment operations, triage notes, and staff handoffs with accessibility-first UI.",
       "tech": ["React", "NestJS", "Docker", "Redis", "PostgreSQL"],
-      "github": "https://github.com/kingsley/pulse-care",
+      "github": "https://github.com/kkbaidu/pulse-care",
       "demo": "https://pulse-care.example.com",
       "challenge": "Balancing compliance-friendly architecture with speed for busy clinical teams.",
       "lesson": "Operational software wins when it reduces cognitive load instead of adding more screens.",
@@ -99,7 +99,7 @@
       "headline": "Headless commerce storefront with AI merchandising",
       "summary": "A performant storefront with personalized recommendations, content blocks, and fast checkout experiences.",
       "tech": ["Next.js", "Tailwind", "Stripe", "Prisma", "OpenAI"],
-      "github": "https://github.com/kingsley/orbit-commerce",
+      "github": "https://github.com/kkbaidu/orbit-commerce",
       "demo": "https://orbit-commerce.example.com",
       "challenge": "Keeping the storefront fast while layering in personalization and analytics.",
       "lesson": "Performance budgets should be part of the architecture, not an afterthought.",
