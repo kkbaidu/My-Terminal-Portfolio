@@ -19,6 +19,11 @@ export const metadata: Metadata = {
     "A modern AI-powered terminal portfolio for a full-stack, AI, cloud, and mobile software engineer.",
   metadataBase: new URL("https://kingsley-portfolio.vercel.app"),
   applicationName: "Kingsley Terminal Portfolio",
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
 };
 
 export default function RootLayout({
