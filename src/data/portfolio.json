@@ -1,168 +1,293 @@
 {
   "identity": {
     "name": "Kingsley Korankye Baidu",
-    "role": "Software Engineer | Full-Stack · AI · Cloud · Mobile",
+    "role": "Software Engineer | Full-Stack · Cloud · Mobile · AI",
     "handle": "kingsley@portfolio:~$",
-    "location": "Remote · Global",
-    "availability": "Open to senior full-stack, AI, and cloud roles"
+    "location": "Accra, Ghana",
+    "availability": "Open to Software Engineering roles (Full-Stack, Cloud, Mobile, AI)"
   },
-  "intro": "I build fast, thoughtful products across web, AI, cloud, and mobile stacks, with an eye toward user experience and systems that scale.",
-  "about": "Kingsley is a software engineer who ships resilient product experiences across React, Next.js, Node.js, cloud platforms, and AI-powered workflows. He blends product thinking with hands-on engineering and cares about clean architecture, performance, and polished UX.",
-  "story": "He works best at the intersection of software craftsmanship, AI integration, and practical delivery. His work often spans design systems, APIs, deployment pipelines, automation, and product analytics.",
+  "intro": "Software Engineer building backend and full-stack applications, with a particular focus on backend engineering and cloud infrastructure.",
+  "about": "I'm Kingsley Korankye Baidu, a Software Engineer building backend and full-stack applications, with a particular focus on backend engineering and cloud infrastructure.\n\nI started my career working mainly on frontend applications with React, but over time moved deeper into backend development and became more interested in how the systems behind applications are designed, deployed, and maintained. I've since worked with Node.js, Express, PostgreSQL, MongoDB, and AWS — building APIs, designing databases, and shipping production deployments with CI/CD pipelines.",
+  "story": "A highlight of my career so far was taking primary ownership of the backend and cloud infrastructure for a production application — designing the APIs and database architecture, and managing its full AWS deployment. I've also rebuilt a backend from Laravel to Node.js, and worked on projects spanning mobile applications, AI, and real-world data integrations.\n\nI'm focused on growing as a strong backend-focused engineer — building reliable, scalable systems that hold up in production. I'm also genuinely interested in how AI can be incorporated into practical software products, and it's an area I'm actively developing alongside my core engineering work.",
   "links": {
     "github": "https://github.com/kkbaidu",
     "linkedin": "https://www.linkedin.com/in/kingsley-korankye-baidu",
+    "email": "kingsleybaidu99@gmail.com",
+    "phone": "+233542423721",
     "blog": "/blog"
   },
   "stats": [
-    { "label": "Years shipping", "value": "2.5+" },
-    { "label": "Product launches", "value": "10+" },
-    { "label": "Cloud deployments", "value": "10+" },
-    { "label": "AI features built", "value": "10+" }
+    { "label": "Experience", "value": "3+ Years" },
+    { "label": "AWS Certified", "value": "Cloud Practitioner" },
+    { "label": "Hackathons", "value": "2 (Led Both)" },
+    { "label": "Public Repos", "value": "65+" }
   ],
   "services": [
-    "Full-stack product engineering",
-    "AI assistant and RAG systems",
-    "Cloud architecture and automation",
-    "Mobile app development",
-    "Design system implementation",
-    "Performance and accessibility tuning"
+    "Backend API Design & Optimization (Node.js, Express, REST, GraphQL)",
+    "Cloud Architecture & Infrastructure (AWS RDS, Elastic Beanstalk, Amplify, CI/CD)",
+    "Full-Stack Web Development (React, Next.js, TypeScript, Tailwind CSS)",
+    "Mobile App Development (React Native, Expo, EAS)",
+    "Database Architecture & Query Tuning (PostgreSQL, Prisma, MongoDB, Redis)",
+    "AI Integration & Automation (Alle-AI API, LLM Workflows)",
+    "Game Development (Godot Engine, GDScript, cross-platform)"
   ],
   "skills": [
-    {
-      "title": "Frontend",
-      "items": [
-        { "name": "React", "level": 98 },
-        { "name": "Next.js", "level": 96 },
-        { "name": "Tailwind CSS", "level": 95 },
-        { "name": "React Native", "level": 86 }
-      ]
-    },
     {
       "title": "Backend",
       "items": [
         { "name": "Node.js", "level": 95 },
-        { "name": "NestJS", "level": 88 },
-        { "name": "Express", "level": 90 },
-        { "name": "PostgreSQL", "level": 89 }
+        { "name": "Express.js", "level": 92 },
+        { "name": "REST APIs", "level": 95 },
+        { "name": "GraphQL", "level": 88 },
+        { "name": "FastAPI", "level": 85 }
       ]
     },
     {
-      "title": "Cloud",
+      "title": "Frontend & Mobile",
       "items": [
-        { "name": "AWS", "level": 94 },
-        { "name": "Docker", "level": 90 },
-        { "name": "Kubernetes", "level": 82 },
-        { "name": "Vercel", "level": 97 }
+        { "name": "React", "level": 95 },
+        { "name": "Next.js", "level": 92 },
+        { "name": "React Native / Expo", "level": 90 },
+        { "name": "TypeScript", "level": 92 },
+        { "name": "Tailwind CSS", "level": 94 }
       ]
     },
     {
-      "title": "AI / ML",
+      "title": "Cloud & DevOps",
       "items": [
-        { "name": "Python", "level": 90 },
-        { "name": "LLMs", "level": 92 },
-        { "name": "Prompt engineering", "level": 94 },
-        { "name": "TensorFlow", "level": 78 }
+        { "name": "AWS (Elastic Beanstalk, RDS, Amplify)", "level": 90 },
+        { "name": "Docker", "level": 88 },
+        { "name": "CodePipeline / CI/CD", "level": 88 },
+        { "name": "Vercel & Render", "level": 92 }
+      ]
+    },
+    {
+      "title": "Databases & Tools",
+      "items": [
+        { "name": "PostgreSQL", "level": 92 },
+        { "name": "Prisma", "level": 90 },
+        { "name": "MongoDB", "level": 88 },
+        { "name": "Git & GitHub", "level": 95 },
+        { "name": "Python", "level": 86 }
+      ]
+    },
+    {
+      "title": "Game Development",
+      "items": [
+        { "name": "Godot Engine", "level": 40 },
+        { "name": "GDScript", "level": 40 }
       ]
     }
   ],
   "projects": [
     {
-      "slug": "climate",
-      "name": "Climate Grid",
-      "headline": "Real-time climate analytics for field teams",
-      "summary": "An operational dashboard that combines device telemetry, forecasts, and AI summaries for fast decision-making.",
-      "tech": ["Next.js", "TypeScript", "AWS", "PostgreSQL", "OpenAI"],
-      "github": "https://github.com/kkbaidu/climate-grid",
-      "demo": "https://climate-grid.example.com",
-      "challenge": "The system had to render live data at low latency while staying readable on mobile field devices.",
-      "lesson": "Small, purpose-built interactions beat noisy dashboards when users need to act under pressure.",
-      "architecture": "Edge-friendly API routes, server components for data fetching, cached widgets, and a lightweight AI insight layer.",
-      "screenshots": ["Dashboard", "Mobile view", "AI summary panel"]
+      "slug": "climatehealth",
+      "name": "ClimateHealth Systems",
+      "headline": "Multi-platform climate-health early-warning platform (GreenRes Hackathon 2026)",
+      "summary": "Led a team to build a multi-platform climate-health early-warning platform as part of GreenRes Hackathon 2026. Deployed FastAPI backend to Render, Next.js web app to Vercel, and React Native Android builds via Expo Application Services (EAS). Integrated Open-Meteo climate data, Africa's Talking USSD, and Cloudinary.",
+      "tech": ["React Native", "Expo", "Next.js", "FastAPI", "TypeScript", "Render", "Vercel", "Open-Meteo", "Cloudinary"],
+      "github": "https://github.com/kkbaidu/ClimateHealth",
+      "demo": "https://climate-health-seven.vercel.app",
+      "challenge": "Managing build and release workflows across web, mobile, and backend platforms while handling offline storage fallbacks, audio playback, and live climate data integrations.",
+      "lesson": "Unified deployment pipelines and offline-first storage fallbacks ensure high availability for multi-platform early-warning systems.",
+      "architecture": "FastAPI backend on Render with Open-Meteo & USSD integrations, Next.js web portal on Vercel, and React Native mobile app built via Expo Application Services (EAS).",
+      "screenshots": ["Mobile view", "Web portal", "Early warning alerts"]
     },
     {
-      "slug": "healthcare",
-      "name": "Pulse Care",
-      "headline": "Patient experience workflow platform",
-      "summary": "A secure workflow system for appointment operations, triage notes, and staff handoffs with accessibility-first UI.",
-      "tech": ["React", "NestJS", "Docker", "Redis", "PostgreSQL"],
-      "github": "https://github.com/kkbaidu/pulse-care",
-      "demo": "https://pulse-care.example.com",
-      "challenge": "Balancing compliance-friendly architecture with speed for busy clinical teams.",
-      "lesson": "Operational software wins when it reduces cognitive load instead of adding more screens.",
-      "architecture": "Domain modules, audit logging, role-based permissions, and queue-backed async notification jobs.",
-      "screenshots": ["Ops console", "Patient timeline", "Staff queue"]
+      "slug": "interactive-ai-storyteller",
+      "name": "Interactive AI Storyteller",
+      "headline": "Immersive AI storytelling platform — 3rd Place COMPSSA x Alle-AI Hackathon",
+      "summary": "Led a 3-member team to build a dynamic AI storytelling platform at the COMPSSA x Alle-AI Hackathon (July 2025), finishing 3rd out of 12 teams. Built with Next.js 15, React 19, Tailwind CSS v4, Framer Motion, and Alle-AI APIs for multi-modal text, image, and text-to-speech generation.",
+      "tech": ["Next.js", "React", "TypeScript", "Tailwind CSS", "Alle-AI API", "Framer Motion"],
+      "github": "https://github.com/kkbaidu/Interactive-AI-Storyteller",
+      "demo": "https://interactive-ai-storyteller.vercel.app/",
+      "challenge": "Orchestrating real-time AI generation across text narrative, image scenes, interactive choices, and audio text-to-speech while maintaining high UX responsiveness under hackathon time pressure.",
+      "lesson": "Combining streaming text with pre-fetched media generation creates smooth interactive storytelling experiences.",
+      "architecture": "Next.js frontend app router integrated with custom Express backend endpoints wrapping Alle-AI SDK for text, vision, and audio generation.",
+      "screenshots": ["Story intro", "Interactive scene", "Audio narration player"]
     },
     {
-      "slug": "ecommerce",
-      "name": "Orbit Commerce",
-      "headline": "Headless commerce storefront with AI merchandising",
-      "summary": "A performant storefront with personalized recommendations, content blocks, and fast checkout experiences.",
-      "tech": ["Next.js", "Tailwind", "Stripe", "Prisma", "OpenAI"],
-      "github": "https://github.com/kkbaidu/orbit-commerce",
-      "demo": "https://orbit-commerce.example.com",
-      "challenge": "Keeping the storefront fast while layering in personalization and analytics.",
-      "lesson": "Performance budgets should be part of the architecture, not an afterthought.",
-      "architecture": "Server-rendered product pages, incremental caching, and a recommendation service using retrieval signals.",
-      "screenshots": ["Storefront", "Product detail", "Checkout"]
+      "slug": "radici",
+      "name": "Radici",
+      "headline": "Property listing platform for Ghanaians living abroad",
+      "summary": "Contributed full-stack features to Radici, a platform built at Dext Consortium that enabled Ghanaians living abroad to list, discover, and manage properties in Ghana. Built authentication, authorization, APIs, and UI features with React, Node.js, Express.js, and MongoDB. The project did not reach mainstream due to financial constraints from the investors.",
+      "tech": ["React", "Node.js", "Express.js", "MongoDB", "TypeScript"],
+      "github": "https://github.com/kkbaidu",
+      "demo": "",
+      "challenge": "Building a trustworthy property listing platform for a diaspora audience while handling secure auth, complex property data models, and a polished responsive UI.",
+      "lesson": "Strong product-market fit and investor backing are just as important as technical execution for a product reaching mainstream adoption.",
+      "architecture": "React frontend consuming Express.js REST APIs backed by MongoDB, with JWT authentication and role-based access control.",
+      "screenshots": ["Property listings", "Property detail", "Dashboard"]
+    },
+    {
+      "slug": "ipam",
+      "name": "IP Address Management System (IPAM)",
+      "headline": "Production-ready full-stack IP address management platform",
+      "summary": "Full-stack IP address management system for tracking CIDR network blocks, IP allocation, VLAN management, audit logging, rate limiting, and request validation.",
+      "tech": ["Next.js", "Node.js", "Express", "TypeScript", "PostgreSQL", "Prisma", "Redis", "Docker", "AWS"],
+      "github": "https://github.com/kkbaidu/IPAM",
+      "demo": "https://ipam-five.vercel.app/",
+      "challenge": "Efficiently calculating next-free IP allocations across large subnets while ensuring atomic reservation, strict validation, and low latency under high query loads.",
+      "lesson": "Database indexing combined with Redis caching dramatically speeds up IP subnet calculation and prevents allocation collisions.",
+      "architecture": "Dockerized Next.js 14 frontend, Express/TypeScript backend, PostgreSQL with Prisma ORM, and Redis cache deployed to AWS ECS and RDS.",
+      "screenshots": ["Network dashboard", "IP allocation grid", "VLAN manager"]
+    },
+    {
+      "slug": "student-result-management",
+      "name": "Student Result Management System",
+      "headline": "Dual-interface (GUI & CLI) student performance analytics application",
+      "summary": "A Python-based student result management system featuring a sleek CustomTkinter dark GUI with Matplotlib visual analytics alongside a high-performance CLI interface for batch processing.",
+      "tech": ["Python", "CustomTkinter", "Matplotlib", "PostgreSQL", "SHA-256 Auth"],
+      "github": "https://github.com/kkbaidu/Student-Result-Management-CLI",
+      "demo": "https://github.com/kkbaidu/Student-Result-Management-CLI",
+      "challenge": "Maintaining 100% feature parity between a rich graphical desktop application and a headless command-line interface while implementing secure auth and multi-format data imports.",
+      "lesson": "Decoupling business logic and data access from UI adapters enables seamless dual-interface delivery.",
+      "architecture": "Python application layer connecting to PostgreSQL database, with pluggable CustomTkinter GUI and argparse/cmd CLI modules.",
+      "screenshots": ["GUI dashboard", "CLI launcher", "Performance charts"]
     }
   ],
   "experience": [
     {
-      "company": "Independent / Consulting",
-      "title": "Senior Full-Stack Engineer",
-      "period": "2022 - Present",
+      "company": "Tradelio Trading Technologies",
+      "title": "Software Engineer",
+      "period": "August 2025 – August 2026",
       "points": [
-        "Built AI-enhanced internal tools and customer-facing products with Next.js and Node.js.",
-        "Led cloud-native delivery pipelines and performance audits for production apps.",
-        "Designed mobile and web experiences with accessibility and maintainability in mind."
+        "Led backend development for Miyaka, an in-house platform for reporting sexual harassment cases, building REST APIs, authentication/authorization, admin systems, notifications, and file-upload workflows with Node.js, Express.js, PostgreSQL, and Prisma.",
+        "Designed PostgreSQL schemas, relationships, indexes, and migrations; migrated the database from Neon to AWS RDS PostgreSQL and optimized queries for production use.",
+        "Designed and managed AWS architecture and end-to-end deployments using Elastic Beanstalk, RDS PostgreSQL, Amplify, Route 53, and CodePipeline for CI/CD; owned production configuration and infrastructure.",
+        "Served as the primary backend engineer, making architecture decisions and working directly with the founder to deliver the platform."
       ]
     },
     {
-      "company": "Product Team",
-      "title": "Software Engineer",
-      "period": "2019 - 2022",
+      "company": "Dext Consortium",
+      "title": "Software Engineer (Intern → Part-time)",
+      "period": "August 2023 – September 2025",
       "points": [
-        "Owned feature delivery across frontend, backend, and infrastructure layers.",
-        "Implemented APIs, dashboards, and automation that reduced manual work for operations teams.",
-        "Partnered with designers and PMs to turn ambiguous ideas into shippable product slices."
+        "Played a major role in building Dext Freelance, a freelancing platform, with responsive interfaces using React.js and Tailwind CSS.",
+        "Transitioned to full-stack development on Radici, a property listing platform for Ghanaians in the diaspora to list and manage properties in Ghana. Built React/Node.js features, authentication, authorization, and REST APIs with Express.js and MongoDB."
+      ]
+    },
+    {
+      "company": "Backslash Technologies",
+      "title": "Software Engineer Intern",
+      "period": "March 2025 – May 2025",
+      "points": [
+        "Rebuilt the Arts & Cocktail Platform backend from Laravel/PHP to Node.js/Express.js in response to performance issues; benchmarked the new implementation against the existing system, reducing average page-load time by 30% and API response latency by ~120ms.",
+        "Supported production deployments by diagnosing and resolving bugs that caused deployment failures."
+      ]
+    },
+    {
+      "company": "Polymorph Labs",
+      "title": "Software Engineer Intern",
+      "period": "February 2024 – May 2024",
+      "points": [
+        "Improved the GIMPA admissions system through frontend form validation, reusable UI components, GraphQL queries/mutations, and selected backend routes using React, TypeScript, and GraphQL."
+      ]
+    },
+    {
+      "company": "OGames Studio",
+      "title": "Game Developer Intern (Remote)",
+      "period": "2023",
+      "points": [
+        "Implemented game mechanics and logic using GDScript scripting language for cross-platform games built with the Godot Engine.",
+        "Collaborated remotely to deliver game feature implementations and debugging across platforms."
       ]
     }
   ],
   "education": [
-    "BSc Computer Science",
-    "Continuous learning across cloud, distributed systems, and applied AI"
+    "University of Ghana — BSc Computer Science (Jan 2022 – Sep 2025)",
+    "Pope John Senior High School & Minor Seminary — General Arts (Electives: Economics, Elective Mathematics, Geography, French) (2017–2020)",
+    "Rev. Father Wieggers R/C Basic School — JHS (BECE 2017)",
+    "Good Foundation International School — Primary (Early schooling, Nsawam)"
   ],
   "certifications": [
-    "AWS-focused cloud certifications",
-    "Professional software delivery and architecture training"
+    "AWS Certified Cloud Practitioner — Amazon Web Services (2025)"
   ],
-  "articles": [
+  "hackathons": [
     {
-      "slug": "ai-product-thinking",
-      "title": "Building AI Features People Actually Use",
-      "summary": "How to layer retrieval, prompt design, and UX into AI features that feel trustworthy.",
-      "date": "2026-05-12",
-      "tags": ["AI", "UX", "Product"]
+      "name": "GreenRes Hackathon 2026",
+      "result": "Participated",
+      "project": "ClimateHealth Systems",
+      "role": "Team Lead & Full-Stack Engineer",
+      "description": "Led team to build a multi-platform climate-health early-warning system using React Native, Next.js, and FastAPI."
     },
     {
-      "slug": "cloud-systems",
-      "title": "Practical Cloud Architecture for Small Teams",
-      "summary": "A systems-thinking guide to keeping cloud costs and complexity under control.",
-      "date": "2026-03-08",
-      "tags": ["Cloud", "Architecture"]
+      "name": "COMPSSA x Alle-AI Hackathon",
+      "result": "3rd Place out of 12 teams",
+      "project": "Interactive AI Storyteller",
+      "role": "Team Lead (3-member team)",
+      "description": "Led a 3-member team to build an immersive AI storytelling platform using Next.js 15, React 19, and Alle-AI APIs for text, image, and audio generation."
+    }
+  ],
+  "leadership": [
+    "Primary Backend Lead — Miyaka platform, Tradelio Trading Technologies",
+    "Team Lead — COMPSSA x Alle-AI Hackathon (Interactive AI Storyteller, 3rd Place)",
+    "Team Lead — GreenRes Hackathon 2026 (ClimateHealth Systems)",
+    "Academic Committee Head — Computer Science Students' Association, University of Ghana (contested for President, received top vetting scores)",
+    "Organizing Secretary — National Union of Presbyterian Students – Ghana (NUPS-G), Akuafo Hall (2 years)",
+    "Section Leader — Saint Anthony's Section, Rev. Father Wieggers R/C Basic School JHS",
+    "Senior Compound Overseer — Good Foundation International School / Rev. Father Wieggers Primary"
+  ],
+  "personalBackground": {
+    "origin": "Born in Cantonments, Accra, Ghana. Grew up in Nsawam, Ghana.",
+    "schools": [
+      "Good Foundation International School, Nsawam (Primary 1–2)",
+      "Rev. Father Wieggers R/C Basic School, Nsawam (Primary 2–6, JHS — BECE 2017)",
+      "Pope John Senior High School & Minor Seminary (General Arts — Economics, Elective Maths, Geography, French)",
+      "University of Ghana, Legon — BSc Computer Science (2022–2025)"
+    ],
+    "religion": "Christian",
+    "favoriteSubjects": ["Mathematics", "Information Technology (IT)"],
+    "softSkills": [
+      "Repairing computers, laptops, mobile phones, and electronic gadgets (self-taught during a gap year at a phone repair shop after high school)",
+      "Leadership — led at every stage of education and career",
+      "Communication and transparency — core values in his working style"
+    ],
+    "gapYear": "After completing high school at Pope John, Kingsley spent a year learning to repair phones and electronic gadgets at a phone repairing shop before university.",
+    "workingStyle": "Values clear communication, transparency, and collaboration. Believes in leading by example and taking ownership of his work.",
+    "faith": "Christian faith is central to his life and values."
+  },
+  "hobbies": [
+    "Playing video games — especially football games (FIFA / EA FC and PES / eFootball)",
+    "Watching football — favorite club is Real Madrid",
+    "Fixing computers, laptops, and mobile phones"
+  ],
+  "careerGoals": "Kingsley's goal is to become one of the best Software Engineers in the world. His core purpose in life is to make a positive impact in people's lives through everything he engages in — whether that is software, community, or leadership.",
+  "articles": [
+    {
+      "slug": "ai-storyteller-architecture",
+      "title": "Architecting an Interactive AI Storyteller",
+      "summary": "How we integrated Alle-AI APIs with Next.js 15, Framer Motion, and HTML5 audio narration to build an award-winning interactive storytelling experience.",
+      "date": "2025-07-20",
+      "tags": ["AI", "Next.js", "Alle-AI", "Hackathon"]
+    },
+    {
+      "slug": "aws-database-migration",
+      "title": "Migrating Production PostgreSQL Databases to AWS RDS",
+      "summary": "Key lessons from migrating PostgreSQL databases from managed Neon instances to AWS RDS with zero downtime and optimized index strategies.",
+      "date": "2025-11-14",
+      "tags": ["AWS", "PostgreSQL", "Database", "DevOps"]
     }
   ],
   "asciiLogos": [
     "__   __  _            _            _   _            \n\\ \\ / / | | ___   ___| | _____  __| | | | ___  ___ \n \\ V /  | |/ _ \\ / __| |/ / _ \\/ _\\` | | |/ _ \\/ __|\n  | |   | | (_) | (__|   <  __/ (_| | | |  __/\\__ \\\n  |_|   |_|\\___/ \\___|_|\\_\\___|\\__,_| |_|\\___||___/",
-    "[ Kingsley Terminal Portfolio ]"
+    "[ Kingsley Korankye Baidu — Terminal Portfolio ]"
   ],
   "knowledgeBase": [
-    "Kingsley specializes in full-stack development, AI systems, machine learning workflows, cloud architecture, and mobile experiences.",
-    "He has strong production experience with Next.js, React, TypeScript, Node.js, AWS, Docker, PostgreSQL, and React Native.",
-    "His AI work includes retrieval-augmented assistants, prompt-driven workflows, and product features powered by LLMs.",
-    "He cares about clean architecture, performance, accessibility, observability, and polished UX.",
-    "Projects include climate analytics, healthcare workflows, and headless commerce experiences.",
-    "He is available for full-stack, AI, cloud, and mobile roles."
+    "Kingsley Korankye Baidu is a Software Engineer building backend and full-stack applications, with a particular focus on backend engineering and cloud infrastructure. He started his career in frontend development with React, then moved deeper into backend systems — how they are designed, deployed, and maintained. He now works primarily with Node.js, Express, PostgreSQL, MongoDB, and AWS.",
+    "A career highlight was taking primary ownership of the backend and cloud infrastructure for a production application — designing the APIs and database architecture, and managing its full AWS deployment. He has also rebuilt a backend from Laravel to Node.js, and worked on projects spanning mobile applications, AI, and real-world data integrations. He is focused on building reliable, scalable backend systems and is actively exploring how AI can be incorporated into practical software products.",
+    "He also has game development experience using the Godot Engine and GDScript through a remote internship with OGames Studio.",
+    "Professional experience includes: Software Engineer at Tradelio Trading Technologies (Miyaka — sexual harassment reporting platform, AWS RDS/Elastic Beanstalk/Amplify/CodePipeline CI/CD), Software Engineer at Dext Consortium (Dext Freelance frontend, Radici — property listing platform for Ghanaian diaspora using React/Node.js/Express/MongoDB), Software Engineer Intern at Backslash Technologies (Arts & Cocktail backend migration from Laravel/PHP to Node.js/Express, -30% page load time, -120ms latency), Software Engineer Intern at Polymorph Labs (GIMPA admissions system with React, TypeScript, GraphQL), and Game Developer Intern at OGames Studio (Godot Engine, GDScript, cross-platform game mechanics).",
+    "He participated in two hackathons and led both: GreenRes Hackathon 2026 (ClimateHealth Systems — climate-health early-warning system with React Native, Next.js, FastAPI) and COMPSSA x Alle-AI Hackathon July 2025 (Interactive AI Storyteller — 3rd Place out of 12 teams, 3-member team).",
+    "Projects include: ClimateHealth Systems (GreenRes Hackathon 2026, React Native/Next.js/FastAPI), Interactive AI Storyteller (3rd Place COMPSSA x Alle-AI Hackathon, Next.js 15/React 19/Alle-AI API), Radici (property listing platform for Ghanaian diaspora, React/Node.js/MongoDB — did not reach mainstream due to investor financial constraints), IPAM (IP Address Management System — Next.js, Express, PostgreSQL, Prisma, Redis, Docker, AWS), Student Result Management System (GUI & CLI, Python, CustomTkinter, Matplotlib, PostgreSQL).",
+    "Education: BSc Computer Science from University of Ghana, Legon (Jan 2022 – Sep 2025). Before university, attended Pope John Senior High School & Minor Seminary (General Arts — Economics, Elective Mathematics, Geography, French). Completed JHS at Rev. Father Wieggers R/C Basic School in Nsawam (BECE 2017). Started primary school at Good Foundation International School in Nsawam.",
+    "Certifications: AWS Certified Cloud Practitioner — Amazon Web Services (2025).",
+    "Kingsley is a natural and proven leader. He has served as: Senior Compound Overseer in primary school, Section Leader for Saint Anthony's Section in JHS, Organizing Secretary for NUPS-G Akuafo Hall for 2 years, Academic Committee Head for the Computer Science Students' Association UG (after an impressive vetting score while contesting for President), Team Lead in both hackathons he participated in, and the primary backend lead for Miyaka at Tradelio.",
+    "Personal background: Born in Cantonments, Accra, Ghana. Grew up in Nsawam, Ghana. Christian faith is important to him. After high school, he spent a gap year learning to repair phones and electronic gadgets at a repair shop — a hands-on problem-solving experience he values deeply.",
+    "Soft skills and non-coding interests: Kingsley can repair computers, laptops, mobile phones, and electronic gadgets. He is a strong communicator and values transparency in his working style. He believes in impact-driven work and leading with integrity.",
+    "Hobbies: Playing football video games (FIFA/EA FC and PES/eFootball). His favorite football club is Real Madrid. He also enjoys watching football and fixing electronic devices.",
+    "Career goal: To become one of the best Software Engineers in the world. His core life purpose is to make a meaningful positive impact in people's lives through everything he engages in.",
+    "Favorite subjects since basic school: Mathematics and Information Technology (IT).",
+    "Contact: Email — kingsleybaidu99@gmail.com | Phone — +233542423721 | GitHub — https://github.com/kkbaidu | LinkedIn — https://www.linkedin.com/in/kingsley-korankye-baidu"
   ]
 }
