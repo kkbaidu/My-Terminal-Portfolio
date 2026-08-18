@@ -14,13 +14,17 @@
 
 ### 1. 🖥️ Interactive Terminal & AI Assistant
 <!-- SCREENSHOT 1 OF 2 -->
-![Kingsley Terminal Portfolio & AI Assistant](./docs/screenshots/terminal-ai.png)
+<p align="center">
+  <img src="./docs/screenshots/terminal-ai.png" alt="Kingsley Terminal Portfolio & AI Assistant" width="850" />
+</p>
 
 ---
 
 ### 2. 📱 Mobile View
 <!-- SCREENSHOT 2 OF 2 -->
-![Mobile Responsive View](./docs/screenshots/mobile-view.png)
+<p align="center">
+  <img src="./docs/screenshots/mobile-view.png" alt="Mobile Responsive View" width="320" />
+</p>
 
 ---
 
