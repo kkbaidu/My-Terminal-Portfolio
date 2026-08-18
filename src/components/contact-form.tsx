@@ -85,7 +85,7 @@ export function ContactForm() {
           Send message
         </button>
         <span className={cn("text-sm", status === "success" && "text-accent", status === "error" && "text-error", status === "idle" && "text-muted")}>
-          {status === "success" ? "Message queued successfully." : status === "error" ? "Message failed to send." : "Reply path ready for Vercel deployment."}
+          {status === "success" ? "Message sent! Kingsley will get back to you." : status === "error" ? "Failed to send. Try kingsleybaidu99@gmail.com directly." : "All fields required."}
         </span>
       </div>
     </form>

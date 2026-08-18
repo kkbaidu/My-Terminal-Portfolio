@@ -16,15 +16,21 @@ export async function POST(request: Request) {
     return NextResponse.json({ error: "Invalid contact payload" }, { status: 400 });
   }
 
+  const { name, email, message } = parsed.data;
+  console.log(`[Contact] From: ${name} <${email}>\nMessage: ${message}`);
+
   if (process.env.RESEND_API_KEY && process.env.CONTACT_TO_EMAIL) {
     const resend = new Resend(process.env.RESEND_API_KEY);
     await resend.emails.send({
       from: process.env.CONTACT_FROM_EMAIL ?? "Portfolio <onboarding@resend.dev>",
       to: process.env.CONTACT_TO_EMAIL,
-      subject: `Portfolio contact from ${parsed.data.name}`,
-      replyTo: parsed.data.email,
-      text: parsed.data.message,
+      subject: `Portfolio contact from ${name}`,
+      replyTo: email,
+      text: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
     });
+    console.log(`[Contact] Email sent to ${process.env.CONTACT_TO_EMAIL}`);
+  } else {
+    console.warn("[Contact] RESEND_API_KEY not set — message logged to console only.");
   }
 
   return NextResponse.json({ ok: true });
