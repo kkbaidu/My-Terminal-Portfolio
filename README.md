@@ -10,119 +10,44 @@
 
 ---
 
-## 📸 Portfolio Preview
+## 📸 Portfolio Screenshots (2 Main Views)
 
-<!-- INSERT MAIN TERMINAL SCREENSHOT BELOW -->
-![Kingsley Terminal Portfolio Interface](./docs/screenshots/hero-terminal.png)
-> *Placeholder: Insert a screenshot of the main terminal dashboard above (`./docs/screenshots/hero-terminal.png`)*
+### 1. 🖥️ Interactive Terminal & AI Assistant
+<!-- SCREENSHOT 1 OF 2 -->
+![Kingsley Terminal Portfolio & AI Assistant](./docs/screenshots/terminal-ai.png)
+> *Placeholder: Add screenshot #1 here (`./docs/screenshots/terminal-ai.png`)*
 
 ---
 
-## ✨ Features
+### 2. 📱 Projects & Mobile View
+<!-- SCREENSHOT 2 OF 2 -->
+![Projects & Mobile Responsive View](./docs/screenshots/projects-mobile.png)
+> *Placeholder: Add screenshot #2 here (`./docs/screenshots/projects-mobile.png`)*
 
-- 🖥️ **Interactive Command-Line Interface**: Fully interactive terminal with command history, tab autocomplete, shortcuts, and matrix mode.
-- 🤖 **Integrated RAG AI Assistant**: Powered by **Google Gemini 3.6 Flash** and custom RAG retrieval, allowing visitors to ask questions about experience, projects, leadership, and bio.
+---
+
+## ✨ Key Features
+
+- 🖥️ **Interactive Command-Line Interface**: Custom terminal with command history, tab autocomplete, shortcuts, and matrix mode.
+- 🤖 **RAG AI Assistant**: Powered by **Google Gemini 3.6 Flash** and custom RAG retrieval.
 - 🎨 **Dynamic Color Themes**: Switch themes on the fly (`green`, `blue`, `purple`, `amber`).
-- ⚡ **Real-Time Plain Text Streaming**: Instant time-to-first-token streaming for AI responses.
-- 📱 **Mobile Responsive**: Custom flex/grid layouts optimized for mobile, tablet, and desktop viewports.
-- 📬 **Interactive Contact Form**: Integrated contact terminal with console fallback and Resend email integration.
-- 📄 **SEO & Semantic Routing**: Static `/blog` and `/projects` routes alongside terminal navigation.
+- ⚡ **Real-Time Plain Text Streaming**: Instant time-to-first-token response generation.
+- 📱 **Mobile Responsive Layout**: Optimized across mobile, tablet, and desktop viewports.
+- 📬 **Interactive Contact Terminal**: Direct client contact form with console fallback and Resend delivery support.
 
 ---
 
-## 📂 Featured Projects Showcase
+## 📂 Featured Projects Overview
 
-This section showcases key projects built by Kingsley. Insert your project screenshots into the specified paths in `./docs/screenshots/`.
-
----
-
-### 1. 🌦️ ClimateHealth Systems
-> **Headline:** Multi-platform climate-health early-warning platform (GreenRes Hackathon 2026)
-
-- **Tech Stack:** React Native, Expo, Next.js, FastAPI, TypeScript, Render, Vercel, Open-Meteo, Cloudinary
-- **Highlights:** Multi-platform deployment (web, mobile, USSD), live climate data integration, and offline-first storage fallback.
-- **Repository:** [github.com/kkbaidu/ClimateHealth](https://github.com/kkbaidu/ClimateHealth)
-- **Live Demo:** [climate-health-seven.vercel.app](https://climate-health-seven.vercel.app)
-
-#### 📸 Project Screenshot:
-<!-- INSERT CLIMATEHEALTH SCREENSHOT BELOW -->
-![ClimateHealth Systems Screenshot](./docs/screenshots/climate-health.png)
-> *Placeholder: Replace `./docs/screenshots/climate-health.png` with a screenshot of ClimateHealth Systems.*
+- **ClimateHealth Systems** *(GreenRes Hackathon 2026)* — Multi-platform climate-health early-warning system (React Native, Next.js, FastAPI, Render, Vercel).
+- **Interactive AI Storyteller** *(3rd Place COMPSSA x Alle-AI Hackathon)* — Immersive AI storytelling platform (Next.js 15, React 19, Alle-AI API).
+- **Radici** *(Dext Consortium)* — Property listing platform for the Ghanaian diaspora (React, Node.js, Express, MongoDB).
+- **IPAM - IP Address Management System** — Full-stack IP address management platform (Next.js, Express, PostgreSQL, Prisma, Redis, Docker, AWS).
+- **Student Result Management System** — Dual-interface (GUI & CLI) student performance analytics app (Python, CustomTkinter, Matplotlib, PostgreSQL).
 
 ---
 
-### 2. 📖 Interactive AI Storyteller
-> **Headline:** Immersive AI storytelling platform — **3rd Place** COMPSSA x Alle-AI Hackathon (July 2025)
-
-- **Tech Stack:** Next.js 15, React 19, TypeScript, Tailwind CSS v4, Alle-AI API, Framer Motion
-- **Highlights:** Orchestrates real-time multi-modal AI generation across text narrative, image scenes, interactive choices, and audio text-to-speech.
-- **Repository:** [github.com/kkbaidu/Interactive-AI-Storyteller](https://github.com/kkbaidu/Interactive-AI-Storyteller)
-- **Live Demo:** [interactive-ai-storyteller.vercel.app](https://interactive-ai-storyteller.vercel.app/)
-
-#### 📸 Project Screenshot:
-<!-- INSERT AI STORYTELLER SCREENSHOT BELOW -->
-![Interactive AI Storyteller Screenshot](./docs/screenshots/ai-storyteller.png)
-> *Placeholder: Replace `./docs/screenshots/ai-storyteller.png` with a screenshot of Interactive AI Storyteller.*
-
----
-
-### 3. 🏡 Radici
-> **Headline:** Property listing platform for Ghanaians living abroad (Dext Consortium)
-
-- **Tech Stack:** React, Node.js, Express.js, MongoDB, TypeScript, JWT Auth
-- **Highlights:** Full-stack property discovery platform designed for the Ghanaian diaspora with secure role-based access control and responsive property management UI.
-
-#### 📸 Project Screenshot:
-<!-- INSERT RADICI SCREENSHOT BELOW -->
-![Radici Property Platform Screenshot](./docs/screenshots/radici.png)
-> *Placeholder: Replace `./docs/screenshots/radici.png` with a screenshot of Radici.*
-
----
-
-### 4. 🌐 IP Address Management System (IPAM)
-> **Headline:** Production-ready full-stack IP address management platform
-
-- **Tech Stack:** Next.js, Node.js, Express, TypeScript, PostgreSQL, Prisma, Redis, Docker, AWS
-- **Highlights:** Calculates next-free IP allocations across CIDR subnets atomically with Redis caching, VLAN management, and audit logging.
-- **Repository:** [github.com/kkbaidu/IPAM](https://github.com/kkbaidu/IPAM)
-- **Live Demo:** [ipam-five.vercel.app](https://ipam-five.vercel.app/)
-
-#### 📸 Project Screenshot:
-<!-- INSERT IPAM SCREENSHOT BELOW -->
-![IPAM System Screenshot](./docs/screenshots/ipam.png)
-> *Placeholder: Replace `./docs/screenshots/ipam.png` with a screenshot of IPAM.*
-
----
-
-### 5. 📊 Student Result Management System
-> **Headline:** Dual-interface (GUI & CLI) student performance analytics application
-
-- **Tech Stack:** Python, CustomTkinter, Matplotlib, PostgreSQL, SHA-256 Auth
-- **Highlights:** Features a sleek dark CustomTkinter GUI with Matplotlib charts alongside a headless CLI interface for batch data processing.
-- **Repository:** [github.com/kkbaidu/Student-Result-Management-CLI](https://github.com/kkbaidu/Student-Result-Management-CLI)
-
-#### 📸 Project Screenshot:
-<!-- INSERT STUDENT RESULT MANAGEMENT SCREENSHOT BELOW -->
-![Student Result Management Screenshot](./docs/screenshots/student-result.png)
-> *Placeholder: Replace `./docs/screenshots/student-result.png` with a screenshot of Student Result Management System.*
-
----
-
-## 🛠️ Additional Portfolio Views
-
-### 📱 Responsive Mobile View
-<!-- INSERT MOBILE VIEW SCREENSHOT BELOW -->
-![Mobile Terminal View](./docs/screenshots/mobile-view.png)
-> *Placeholder: Replace `./docs/screenshots/mobile-view.png` with a mobile screenshot.*
-
-### 🤖 AI Assistant in Action
-<!-- INSERT AI ASSISTANT SCREENSHOT BELOW -->
-![AI Assistant Response Screenshot](./docs/screenshots/ai-assistant.png)
-> *Placeholder: Replace `./docs/screenshots/ai-assistant.png` with a screenshot of `ai <question>`.*
-
----
-
-## 🕹️ Command Reference
+## 🕹️ Command Catalog
 
 | Command | Description |
 | :--- | :--- |
@@ -156,45 +81,19 @@ This section showcases key projects built by Kingsley. Insert your project scree
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Quick Setup
 
-### 1. Clone & Install Dependencies
 ```bash
-git clone https://github.com/kkbaidu/New-Kings-Terminal-Portfolio.git
-cd New-Kings-Terminal-Portfolio
+# 1. Install dependencies
 npm install
-```
 
-### 2. Configure Environment Variables
-Create a `.env.local` file in the root directory:
-
-```env
-# Google Gemini API Configuration
+# 2. Configure .env.local
 GEMINI_API_KEY=your_gemini_api_key_here
 GEMINI_MODEL=gemini-3.6-flash
-
-# Contact Form Delivery (Optional)
-RESEND_API_KEY=your_resend_api_key_here
 CONTACT_TO_EMAIL=kingsleybaidu99@gmail.com
-CONTACT_FROM_EMAIL=Portfolio <onboarding@resend.dev>
 
-# Optional OpenAI fallback
-OPENAI_API_KEY=
-```
-
-### 3. Run Development Server
-```bash
+# 3. Start development server
 npm run dev
-```
-Open `http://localhost:3000` in your browser.
-
----
-
-## 📦 Building for Production
-
-```bash
-npm run build
-npm run start
 ```
 
 ---
