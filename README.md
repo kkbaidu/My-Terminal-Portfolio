@@ -19,9 +19,9 @@
 
 ---
 
-### 2. 📱 Projects & Mobile View
+### 2. 📱 Mobile View
 <!-- SCREENSHOT 2 OF 2 -->
-![Projects & Mobile Responsive View](./docs/screenshots/projects-mobile.png)
+![Mobile Responsive View](./docs/screenshots/projects-mobile.png)
 > *Placeholder: Add screenshot #2 here (`./docs/screenshots/projects-mobile.png`)*
 
 ---
