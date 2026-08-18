@@ -131,7 +131,7 @@ export function PortfolioTerminal() {
     const entryId = createId();
     setEntries((current) => [
       ...current,
-      { id: entryId, kind: "ai", value: `AI>${query}`, loading: true },
+      { id: entryId, kind: "ai", value: `AI>${query}`, loading: true, output: [] },
     ]);
 
     try {
@@ -149,24 +149,36 @@ export function PortfolioTerminal() {
 
       const reader = response.body.getReader();
       const decoder = new TextDecoder();
-      let value = "";
+      let accumulated = "";
 
       while (true) {
         const { done, value: chunk } = await reader.read();
         if (done) break;
-        value += decoder.decode(chunk, { stream: true });
+        accumulated += decoder.decode(chunk, { stream: true });
+        const snapshot = accumulated;
         setEntries((current) =>
-          current.map((entry) => (entry.id === entryId ? { ...entry, value, loading: true } : entry)),
+          current.map((entry) =>
+            entry.id === entryId
+              ? { ...entry, value: snapshot, loading: true, output: [{ type: "markdown" as const, value: snapshot }] }
+              : entry,
+          ),
         );
       }
 
+      const final = accumulated;
       setEntries((current) =>
-        current.map((entry) => (entry.id === entryId ? { ...entry, value, loading: false } : entry)),
+        current.map((entry) =>
+          entry.id === entryId
+            ? { ...entry, value: final, loading: false, output: [{ type: "markdown" as const, value: final }] }
+            : entry,
+        ),
       );
     } catch {
       setEntries((current) =>
         current.map((entry) =>
-          entry.id === entryId ? { ...entry, value: "AI request interrupted.", loading: false } : entry,
+          entry.id === entryId
+            ? { ...entry, value: "AI request interrupted.", loading: false, output: [{ type: "text" as const, value: "AI request interrupted." }] }
+            : entry,
         ),
       );
     }
@@ -438,6 +450,12 @@ export function PortfolioTerminal() {
   );
 }
 
+/** Triggers a section change after render, avoiding setState-during-render. */
+function SectionEffect({ section, onSectionChange }: { section: string; onSectionChange: (v: string) => void }) {
+  useEffect(() => { onSectionChange(section); }, [section, onSectionChange]);
+  return null;
+}
+
 function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: { entry: TerminalEntry; accent: string; onCopy: (text: string) => void; copied: boolean; onSectionChange: (value: string) => void; }) {
   if (entry.kind === "system") {
     return <div className="text-muted">{entry.value}</div>;
@@ -452,8 +470,13 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
     );
   }
 
-  if (entry.loading) {
-    return <div className="text-muted">Loading AI response...</div>;
+  if (entry.loading && (!entry.output || entry.output.length === 0)) {
+    return (
+      <div className="flex items-center gap-2 text-muted text-sm">
+        <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-current" />
+        Generating response...
+      </div>
+    );
   }
 
   return (
@@ -489,9 +512,9 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
         }
 
         if (output.type === "projects") {
-          onSectionChange("projects");
           return (
             <div key={index} className="grid gap-4 xl:grid-cols-2">
+              <SectionEffect section="projects" onSectionChange={onSectionChange} />
               {portfolio.projects.map((project) => (
                 <article key={project.slug} className="rounded-3xl border border-white/10 bg-white/5 p-4">
                   <div className="flex items-start justify-between gap-3">
@@ -524,9 +547,9 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
         }
 
         if (output.type === "skills") {
-          onSectionChange("skills");
           return (
             <div key={index} className="grid gap-4 lg:grid-cols-2">
+              <SectionEffect section="skills" onSectionChange={onSectionChange} />
               {portfolio.skills.map((group) => (
                 <div key={group.title} className="rounded-3xl border border-white/10 bg-white/5 p-4">
                   <h3 className="text-lg font-semibold text-foreground">{group.title}</h3>
@@ -550,9 +573,9 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
         }
 
         if (output.type === "experience") {
-          onSectionChange("experience");
           return (
             <div key={index} className="space-y-4">
+              <SectionEffect section="experience" onSectionChange={onSectionChange} />
               {portfolio.experience.map((job) => (
                 <div key={`${job.company}-${job.title}`} className="rounded-3xl border border-white/10 bg-white/5 p-4">
                   <div className="flex flex-wrap items-center justify-between gap-3">
@@ -572,9 +595,9 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
         }
 
         if (output.type === "resume") {
-          onSectionChange("resume");
           return (
             <div key={index} className="rounded-3xl border border-white/10 bg-white/5 p-4">
+              <SectionEffect section="resume" onSectionChange={onSectionChange} />
               <div className="flex flex-wrap items-center justify-between gap-3">
                 <div>
                   <p className="text-xs uppercase tracking-[0.32em] text-muted">Resume</p>
@@ -597,9 +620,9 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
         }
 
         if (output.type === "articles") {
-          onSectionChange("blog");
           return (
             <div key={index} className="grid gap-4 md:grid-cols-2">
+              <SectionEffect section="blog" onSectionChange={onSectionChange} />
               {portfolio.articles.map((article) => (
                 <article key={article.slug} className="rounded-3xl border border-white/10 bg-white/5 p-4">
                   <p className="text-xs uppercase tracking-[0.32em] text-muted">Article</p>
@@ -615,19 +638,27 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
         }
 
         if (output.type === "contact") {
-          onSectionChange("contact");
-          return <ContactForm key={index} />;
+          return (
+            <div key={index}>
+              <SectionEffect section="contact" onSectionChange={onSectionChange} />
+              <ContactForm />
+            </div>
+          );
         }
 
         if (output.type === "github") {
-          onSectionChange("github");
-          return <GitHubProfile key={index} />;
+          return (
+            <div key={index}>
+              <SectionEffect section="github" onSectionChange={onSectionChange} />
+              <GitHubProfile />
+            </div>
+          );
         }
 
         if (output.type === "stat-grid") {
-          onSectionChange("overview");
           return (
             <div key={index} className="grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+              <SectionEffect section="overview" onSectionChange={onSectionChange} />
               {portfolio.stats.map((stat) => (
                 <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/5 p-4">
                   <p className="text-2xl font-semibold text-foreground">{stat.value}</p>
