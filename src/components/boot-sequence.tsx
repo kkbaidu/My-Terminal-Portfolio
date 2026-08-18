@@ -20,14 +20,14 @@ export function BootSequence({ lines, currentLine, completed }: BootSequenceProp
         <div className="mb-6 flex items-center justify-between">
           <div>
             <p className="text-xs uppercase tracking-[0.4em] text-accent/80">System boot</p>
-            <h1 className="mt-2 text-2xl font-semibold text-foreground md:text-4xl">Kingsley Terminal Portfolio</h1>
+            <h1 className="mt-2 text-xl font-semibold text-foreground sm:text-2xl md:text-4xl">Kingsley Terminal Portfolio</h1>
           </div>
           <div className="rounded-full border border-accent/20 bg-accent/10 px-4 py-1 text-xs uppercase tracking-[0.3em] text-accent">
             <span className={completed ? "text-accent" : "blink-cursor"}>●</span> initializing
           </div>
         </div>
 
-        <div className="grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
+        <div className="grid gap-6 md:grid-cols-[1.2fr_0.8fr]">
           <div className="space-y-4 rounded-3xl border border-white/10 bg-black/40 p-5 font-mono text-sm text-foreground/90">
             <pre className="overflow-x-auto whitespace-pre-wrap text-[0.82rem] leading-5 text-accent/80">
 {String.raw` ____  _                 _                 

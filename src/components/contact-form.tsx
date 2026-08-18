@@ -42,39 +42,55 @@ export function ContactForm() {
   return (
     <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 rounded-3xl border border-white/10 bg-white/5 p-4 md:p-5">
       <div className="flex items-center gap-3 text-sm font-medium text-foreground">
-        <Mail className="h-4 w-4 text-accent" />
-        Contact terminal
+        <Mail className="h-4 w-4 shrink-0 text-accent" />
+        Contact Kingsley
       </div>
-      <div className="grid gap-3 md:grid-cols-3">
-        <label className="space-y-2">
+
+      <div className="grid gap-3 sm:grid-cols-2">
+        {/* Name */}
+        <label className="space-y-1.5">
           <span className="text-xs uppercase tracking-[0.24em] text-muted">Name</span>
           <input
             {...register("name")}
-            className={cn("w-full rounded-2xl border border-white/10 bg-black/50 px-4 py-3 font-mono text-sm outline-none transition focus:border-accent focus:ring-1 focus:ring-accent/30", errors.name && "border-error")}
+            className={cn(
+              "w-full rounded-2xl border border-white/10 bg-black/50 px-4 py-3 font-mono text-sm outline-none transition focus:border-accent focus:ring-1 focus:ring-accent/30",
+              errors.name && "border-error",
+            )}
             placeholder="Your name"
           />
           {errors.name ? <p className="text-xs text-error">{errors.name.message}</p> : null}
         </label>
-        <label className="space-y-2">
+
+        {/* Email */}
+        <label className="space-y-1.5">
           <span className="text-xs uppercase tracking-[0.24em] text-muted">Email</span>
           <input
             {...register("email")}
-            className={cn("w-full rounded-2xl border border-white/10 bg-black/50 px-4 py-3 font-mono text-sm outline-none transition focus:border-accent focus:ring-1 focus:ring-accent/30", errors.email && "border-error")}
+            className={cn(
+              "w-full rounded-2xl border border-white/10 bg-black/50 px-4 py-3 font-mono text-sm outline-none transition focus:border-accent focus:ring-1 focus:ring-accent/30",
+              errors.email && "border-error",
+            )}
             placeholder="you@example.com"
           />
           {errors.email ? <p className="text-xs text-error">{errors.email.message}</p> : null}
         </label>
-        <label className="space-y-2 md:col-span-1">
+
+        {/* Message — full width */}
+        <label className="space-y-1.5 sm:col-span-2">
           <span className="text-xs uppercase tracking-[0.24em] text-muted">Message</span>
           <textarea
             {...register("message")}
-            rows={3}
-            className={cn("w-full rounded-2xl border border-white/10 bg-black/50 px-4 py-3 font-mono text-sm outline-none transition focus:border-accent focus:ring-1 focus:ring-accent/30", errors.message && "border-error")}
-            placeholder="Tell Kingsley what you're building"
+            rows={4}
+            className={cn(
+              "w-full resize-none rounded-2xl border border-white/10 bg-black/50 px-4 py-3 font-mono text-sm outline-none transition focus:border-accent focus:ring-1 focus:ring-accent/30",
+              errors.message && "border-error",
+            )}
+            placeholder="Tell Kingsley what you're building or working on"
           />
           {errors.message ? <p className="text-xs text-error">{errors.message.message}</p> : null}
         </label>
       </div>
+
       <div className="flex flex-wrap items-center gap-3">
         <button
           type="submit"

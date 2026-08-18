@@ -296,19 +296,19 @@ export function PortfolioTerminal() {
   }
 
   return (
-    <div className="relative min-h-screen overflow-hidden px-3 py-3 sm:px-4 sm:py-4 lg:px-6 lg:py-6">
+    <div className="relative min-h-screen overflow-x-hidden px-3 py-3 sm:px-4 sm:py-4 lg:px-6 lg:py-6">
       <div className="pointer-events-none absolute inset-0 opacity-100 [background-image:radial-gradient(circle_at_20%_20%,rgba(0,255,156,0.12),transparent_0_30%),radial-gradient(circle_at_80%_10%,rgba(76,201,240,0.10),transparent_0_24%),linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px)] [background-size:auto,auto,100%_4px]" />
 
       <div className="relative z-10 mx-auto flex min-h-[calc(100vh-1.5rem)] max-w-7xl flex-col gap-4">
         <header className="terminal-glass flex flex-col gap-4 rounded-[2rem] border border-white/10 px-4 py-4 md:px-6 md:py-5 lg:flex-row lg:items-center lg:justify-between">
-          <div className="flex items-start gap-4">
-            <div className="flex h-14 w-14 items-center justify-center rounded-2xl border border-accent/20 bg-accent/10 text-accent shadow-[0_0_24px_rgba(0,255,156,0.16)]">
-              <TerminalSquare className="h-7 w-7" />
+          <div className="flex items-start gap-3 sm:gap-4">
+            <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-2xl border border-accent/20 bg-accent/10 text-accent shadow-[0_0_24px_rgba(0,255,156,0.16)] sm:h-14 sm:w-14">
+              <TerminalSquare className="h-5 w-5 sm:h-7 sm:w-7" />
             </div>
-            <div>
-              <p className="text-xs uppercase tracking-[0.4em] text-muted">Interactive Terminal Portfolio</p>
-              <h1 className="mt-1 text-2xl font-semibold text-foreground md:text-3xl">{portfolio.identity.name}</h1>
-              <p className="mt-1 max-w-2xl text-sm leading-7 text-foreground/75">{portfolio.identity.role}</p>
+            <div className="min-w-0">
+              <p className="text-[0.6rem] uppercase tracking-[0.35em] text-muted sm:text-xs sm:tracking-[0.4em]">Interactive Terminal Portfolio</p>
+              <h1 className="mt-1 truncate text-xl font-semibold text-foreground sm:text-2xl md:text-3xl">{portfolio.identity.name}</h1>
+              <p className="mt-1 text-xs leading-6 text-foreground/75 sm:text-sm sm:leading-7">{portfolio.identity.role}</p>
             </div>
           </div>
 
@@ -320,15 +320,15 @@ export function PortfolioTerminal() {
           </div>
         </header>
 
-        <section className="grid gap-4 lg:grid-cols-[1.55fr_0.95fr]">
-          <div className="terminal-glass noise scanlines flex min-h-[72vh] flex-col rounded-[2rem] border border-white/10">
+        <section className="grid gap-4 lg:grid-cols-[1.55fr_0.95fr]" id="main-section">
+          <div className="terminal-glass noise scanlines flex min-h-[60vh] flex-col rounded-[2rem] border border-white/10 sm:min-h-[68vh] lg:min-h-[72vh]">
             <div className="flex items-center justify-between border-b border-white/10 px-4 py-3 md:px-5">
-              <div className="flex items-center gap-2 text-xs uppercase tracking-[0.24em] text-muted">
-                <span className="h-2.5 w-2.5 rounded-full bg-accent" />
-                {portfolio.identity.handle}
+              <div className="flex min-w-0 items-center gap-2 text-xs uppercase tracking-[0.24em] text-muted">
+                <span className="h-2.5 w-2.5 shrink-0 rounded-full bg-accent" />
+                <span className="truncate">{portfolio.identity.handle}</span>
               </div>
-              <div className="flex items-center gap-2 text-xs text-muted">
-                <button type="button" onClick={() => setMatrixMode(true)} className="rounded-full border border-white/10 px-3 py-1.5 transition hover:border-accent/30 hover:text-accent">
+              <div className="flex shrink-0 items-center gap-1.5 text-xs text-muted sm:gap-2">
+                <button type="button" onClick={() => setMatrixMode(true)} className="hidden rounded-full border border-white/10 px-3 py-1.5 transition hover:border-accent/30 hover:text-accent sm:block">
                   matrix
                 </button>
                 <button type="button" onClick={() => setEntries([])} className="rounded-full border border-white/10 px-3 py-1.5 transition hover:border-accent/30 hover:text-accent">
@@ -340,7 +340,7 @@ export function PortfolioTerminal() {
               </div>
             </div>
 
-            <div id="terminal-scroll" className="flex-1 space-y-4 overflow-y-auto px-4 py-5 font-mono text-sm md:px-5">
+            <div id="terminal-scroll" className="flex-1 space-y-4 overflow-y-auto px-3 py-4 font-mono text-sm sm:px-4 md:px-5 md:py-5">
               {entries.map((entry) => (
                 <TerminalEntryView
                   key={entry.id}
@@ -357,42 +357,44 @@ export function PortfolioTerminal() {
               ))}
 
               <div className="space-y-2">
-                <div className="flex items-center gap-2 text-sm">
-                  <span className="text-accent">{portfolio.identity.handle}</span>
-                  <span className="text-foreground/70">{input || ""}</span>
+                <div className="flex min-w-0 items-center gap-2 text-sm">
+                  <span className="shrink-0 text-accent">{portfolio.identity.handle}</span>
+                  <span className="truncate text-foreground/70">{input || ""}</span>
                   <span className="blink-cursor text-accent">▋</span>
                 </div>
 
-                <div className="flex flex-col gap-3 lg:flex-row lg:items-center">
-                  <div className="flex min-w-0 flex-1 items-center gap-2 rounded-2xl border border-white/10 bg-black/50 px-4 py-3 focus-within:border-accent/30">
-                    <span className="text-accent/80">$</span>
+                <div className="flex flex-col gap-2">
+                  <div className="flex min-w-0 flex-1 items-center gap-2 rounded-2xl border border-white/10 bg-black/50 px-3 py-2.5 focus-within:border-accent/30 sm:px-4 sm:py-3">
+                    <span className="shrink-0 text-accent/80">$</span>
                     <input
                       ref={inputRef}
                       value={input}
                       onChange={(event) => setInput(event.target.value)}
                       onKeyDown={handleKeyDown}
-                      placeholder="Type help, projects, ask, matrix..."
-                      className="w-full bg-transparent font-mono text-sm text-foreground outline-none placeholder:text-muted"
+                      placeholder="Type a command (help, projects, ask...)"
+                      className="min-w-0 flex-1 bg-transparent font-mono text-sm text-foreground outline-none placeholder:text-muted"
                       autoComplete="off"
                       spellCheck={false}
                     />
-                    <button type="button" onClick={() => void runCommand(input)} className="rounded-xl border border-accent/30 bg-accent/10 p-2 text-accent transition hover:bg-accent/15">
+                    <button type="button" onClick={() => void runCommand(input)} className="shrink-0 rounded-xl border border-accent/30 bg-accent/10 p-2 text-accent transition hover:bg-accent/15">
                       <ArrowRight className="h-4 w-4" />
                     </button>
                   </div>
-                  <div className="flex flex-wrap gap-2 text-xs text-muted">
-                    {suggestions.slice(0, 4).map((suggestion) => (
-                      <button key={suggestion} type="button" onClick={() => setInput(suggestion + " ")} className="rounded-full border border-white/10 px-3 py-1.5 transition hover:border-accent/30 hover:text-accent">
-                        {suggestion}
-                      </button>
-                    ))}
-                  </div>
+                  {suggestions.length > 0 && (
+                    <div className="flex flex-wrap gap-1.5 text-xs text-muted sm:gap-2">
+                      {suggestions.slice(0, 5).map((suggestion) => (
+                        <button key={suggestion} type="button" onClick={() => setInput(suggestion + " ")} className="rounded-full border border-white/10 px-2.5 py-1 transition hover:border-accent/30 hover:text-accent sm:px-3 sm:py-1.5">
+                          {suggestion}
+                        </button>
+                      ))}
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
           </div>
 
-          <aside className="space-y-4">
+          <aside className="space-y-3 sm:space-y-4">
             <div className="terminal-glass rounded-[2rem] border border-white/10 p-4 md:p-5">
               <p className="text-xs uppercase tracking-[0.32em] text-muted">Status</p>
               <div className="mt-4 space-y-3">
@@ -517,13 +519,13 @@ function TerminalEntryView({ entry, accent, onCopy, copied, onSectionChange }: {
               <SectionEffect section="projects" onSectionChange={onSectionChange} />
               {portfolio.projects.map((project) => (
                 <article key={project.slug} className="rounded-3xl border border-white/10 bg-white/5 p-4">
-                  <div className="flex items-start justify-between gap-3">
-                    <div>
+                  <div className="flex flex-wrap items-start justify-between gap-2">
+                    <div className="min-w-0">
                       <p className="text-xs uppercase tracking-[0.32em] text-muted">Project</p>
-                      <h3 className="mt-2 text-lg font-semibold text-foreground">{project.name}</h3>
+                      <h3 className="mt-2 text-base font-semibold text-foreground sm:text-lg">{project.name}</h3>
                       <p className="mt-1 text-sm text-foreground/75">{project.headline}</p>
                     </div>
-                    <div className="rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs uppercase tracking-[0.24em] text-accent">{project.slug}</div>
+                    <div className="shrink-0 rounded-full border border-accent/20 bg-accent/10 px-3 py-1 text-xs uppercase tracking-[0.24em] text-accent">{project.slug}</div>
                   </div>
                   <p className="mt-4 text-sm leading-7 text-foreground/80">{project.summary}</p>
                   <div className="mt-4 flex flex-wrap gap-2">
