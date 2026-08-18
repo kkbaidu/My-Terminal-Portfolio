@@ -15,14 +15,12 @@
 ### 1. 🖥️ Interactive Terminal & AI Assistant
 <!-- SCREENSHOT 1 OF 2 -->
 ![Kingsley Terminal Portfolio & AI Assistant](./docs/screenshots/terminal-ai.png)
-> *Placeholder: Add screenshot #1 here (`./docs/screenshots/terminal-ai.png`)*
 
 ---
 
 ### 2. 📱 Mobile View
 <!-- SCREENSHOT 2 OF 2 -->
-![Mobile Responsive View](./docs/screenshots/projects-mobile.png)
-> *Placeholder: Add screenshot #2 here (`./docs/screenshots/projects-mobile.png`)*
+![Mobile Responsive View](./docs/screenshots/mobile-view.png)
 
 ---
 
