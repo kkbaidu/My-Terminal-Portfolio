@@ -2,7 +2,7 @@ import { NextResponse } from "next/server";
 
 import { portfolio } from "@/lib/portfolio";
 
-const username = process.env.GITHUB_USERNAME ?? "kingsley";
+const username = process.env.GITHUB_USERNAME ?? "kkbaidu";
 
 export async function GET() {
   try {
